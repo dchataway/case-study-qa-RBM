@@ -7,7 +7,7 @@ import numpy as np
 # Show title and description.
 st.title("📄 RBM Case Study Retrieval")
 st.write(
-    "Input a topic and GPT will provide the best RBM case study! "
+    "Input a topic and GPT will provide a recommended public RBM Optimation and DAPR case study! "
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
