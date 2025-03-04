@@ -56,6 +56,9 @@ def fuzzy_match(base_string, string_list, list_embeddings):
         # To find the most similar string
         most_similar_index = np.argmax(similarity_scores)
         output = string_list[most_similar_index]
+
+        if similarity_scores[most_similar_index] < 0.5:
+            st.write(f"Warning: not a perfect match, consider adding a more relevant case study. Similarity score: {similarity_scores[most_similar_index]}.") 
         
     return output, most_similar_index
 
